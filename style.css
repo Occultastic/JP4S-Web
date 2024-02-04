@@ -1,0 +1,79 @@
+/*the entire site*/
+html {
+    background-color: rgb(25, 25, 25);
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 200%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*anchor*/
+a {
+    color: rgb(0, 255, 0);
+}
+
+/*anchor as the title*/
+.homepage {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) { 
+    .smaller {
+        display: none;
+    }
+}
+
+nav {
+    padding-bottom: 20px;
+}
+
+/*anchor in the navigation bar*/
+.nav {
+    color: rgb(0, 255, 0);
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(0, 255, 0);
+    border-width: 1px;
+    text-decoration: none;
+    line-height: 400%;
+}
+
+@media only screen and (min-width: 830px) { 
+    .small {
+        display: none;
+    }
+}
+
+/*important information in a red box*/
+.important {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-width: 2px;
+    display: inline-flex;
+    overflow-wrap: break-word;
+    justify-content: center;
+    text-align: center;
+}
+
+/*split content into muliple containers*/
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+.flex-item {
+    padding: 5px;
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
