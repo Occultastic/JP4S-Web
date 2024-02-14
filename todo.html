@@ -3,8 +3,6 @@
 
 <head>
     <title>JP4S - Development Roadmap</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/saitama_logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,7 +18,146 @@
         </nav>
     </header>
     <main>
-        <p class="important">This page has no content. It will be added later.</p>
+        <div class="roadmap">
+          <div class="roadmap__component roadmap__component--background">
+              <h2 class="roadmap__title">Game Mechanics</h2>
+              <p class="roadmap__paragraph">
+                A rough idea of the game mechanics I want to implement should have been
+                constructed and noted. Some things like the typical schoolgirl supervisor
+                activities need to be incorporated.
+              </p>
+            </div>
+            <div class="roadmap__split roadmap__split--complete">
+              <div class="roadmap__point roadmap__point--complete"></div>
+            </div>
+            <!-- phase starts -->
+            <div class="roadmap__component">
+              <div class="roadmap__phase">PLANNING</div>
+            </div>
+             <!-- split of entries -->
+            <div class="roadmap__component">
+              <div class="roadmap__phase roadmap__phase--right">PRODUCTION</div>
+            </div>
+            <!-- phase ends -->
+            <div class="roadmap__split">
+              <div class="roadmap__point"></div>
+            </div>
+            <div class="roadmap__component roadmap__component--background">
+              <h2 class="roadmap__title">Game Mechanics</h2>
+              <p class="roadmap__paragraph">
+                The game should have the following mechanics implemented in a modular way, so that the rest of
+                development is scalable:
+              </p>
+              <ol>
+                <li>A functional dialogue system which is node based. The dialogue system can
+                  have fields such as "speaker name", "dialogue line", "speaker animation", "speaker expression",
+                  "speaker name color", "recipient animation", "recipient expression" and a field to invoke
+                  events like the ones that will be mentioned in the next entry.
+                </li>
+                <li>A task system with at least one type of task available. Examples are: a collectable task,
+                  an escort task, a service task, <abbr title="et cetera OR and alike">etc.</abbr>.
+                  Events are actions where the task is discovered or recieved, completed or failed.
+                </li>
+                <li>A scene to test the features. (like a classroom, natural scenery, <abbr title="et cetera OR and alike">etc.</abbr>)</li>
+              </ol>
+            </div>
+            <!-- split of entries -->
+            <div class="roadmap__component">
+                <div class="roadmap__phase roadmap__phase--right"></div>
+              </div>
+              <!-- phase ends -->
+              <div class="roadmap__split">
+                <div class="roadmap__point"></div>
+              </div>
+              <div class="roadmap__component roadmap__component--background">
+                <h2 class="roadmap__title">Story Content</h2>
+                <p class="roadmap__paragraph">
+                  At this time I should have devised some of the characters as well
+                  as their relationships with each other. Note: relationships does not
+                  need to mean romantic relationships. Idealy a story should have been
+                  developed along side it but I think it is more important to have
+                  complete characters which are not just there for very obvious story-specific
+                  reasons. A story revolves around people, their actions and their view of the world,
+                  not people existing purely for the purpose of a story.
+                </p>
+              </div>
+              <div class="roadmap__component">
+                <div class="roadmap__phase roadmap__phase--right"></div>
+              </div>
+              <!-- phase ends -->
+              <div class="roadmap__split">
+                <div class="roadmap__point"></div>
+              </div>
+              <div class="roadmap__component roadmap__component--background">
+                <h2 class="roadmap__title">Visual Aesthetics</h2>
+                <p class="roadmap__paragraph">
+                  The games <abbr title="three dimentional">3D</abbr> models will
+                  look like a mixture of the original games anime design but will
+                  also adhere to the realism of the assets so as to not contrast with
+                  them too much. Colors should be not too saturated nor should it have an
+                  ugly grey-filter or sepia-filter effect on them like a lot of games
+                  out there do.
+                </p>
+                <p class="roadmap__paragraph">
+                  Models will also not be color-swapped copies of eachother (like how it
+                  looked like in the original game due to using only one base asset for all characters)
+                  and will also have more realistic features (such as dark undereyes for some, birthmarks, scars,
+                  <abbr title="et cetera OR and alike">etc.</abbr>)
+                </p>
+              </div>
+              <!-- split of entries -->
+              <div class="roadmap__component roadmap__component--background">
+                <h2 class="roadmap__title">Bug Hunting</h2>
+                <p class="roadmap__paragraph">
+                  As the title implies, this phase will revolve around testing the features in their
+                  entirety (as opposed to testing specific features right after development) to see
+                  what works and what doesn't. This time, community input is essential to ensure a
+                  successful reimagination of the original game.
+                </p>
+              </div>
+              <div class="roadmap__split">
+                <div class="roadmap__point"></div>
+              </div>
+              <!-- phase starts -->
+              <div class="roadmap__component">
+                <div class="roadmap__phase">TESTING</div>
+              </div>
+              <!-- split of entries -->
+              <div class="roadmap__component roadmap__component--background">
+                <h2 class="roadmap__title">Accessibility</h2>
+                <p class="roadmap__paragraph">
+                  With input from the community, we can make some changes to ensure
+                  people with e.g. visual impairments like colorblindness, severe myopia and more
+                  can enjoy not only the game, but also easily navigate the website. Same thing applies to
+                  other impairments like motor issues (so quick time events, if they are implemented, should remain optional)
+                  Of course not all can be adjusted for each person, as this is still developed by me (some random teenage girl).
+                </p>
+              </div>
+              <div class="roadmap__split">
+                <div class="roadmap__point"></div>
+              </div>
+              <!-- phase starts -->
+              <div class="roadmap__component">
+                <div class="roadmap__phase"></div>
+              </div>
+              <!-- split of entries -->
+              <div class="roadmap__component roadmap__component--background">
+                <h2 class="roadmap__title">Availability</h2>
+                <p class="roadmap__paragraph">
+                  I will test out the downloading of the game with a few friends of mine. Unfortunately localization
+                  is too time-consuming and I can only speak German and English, so no translations of the game,
+                  yes not even in German, will be available. Thank you for your understanding (also if you understood this
+                  paragraph, you should be able to understand the game (°u°)/ )
+                </p>
+              </div>
+              <div class="roadmap__split">
+                <div class="roadmap__point"></div>
+              </div>
+              <!-- phase starts -->
+              <div class="roadmap__component">
+                <div class="roadmap__phase"></div>
+              </div>
+          </div>
     </main>
 </body>
 
