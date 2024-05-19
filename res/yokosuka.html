@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <title>Yokosuka Archive System</title>
+</head>
+<body style="background-color: black;">
+    <p id="terminal" style="color: greenyellow; font-family: 'Ubuntu Mono';"></p>
+    <script type="text/javascript">
+        function typeIt() {
+            var p = document.getElementById("terminal");
+            var text = "$ ILLEGAL CONNECTION. BLOCKING FOREIGN DEVICE. ";
+                setInterval(function() {
+                    p.textContent += text;
+                }, 1000)
+        }
+        typeIt();
+    </script>
+</body>
+</html>

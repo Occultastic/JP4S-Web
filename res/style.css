@@ -1,0 +1,171 @@
+/*ALL DEVICES*/
+html {
+    background-color: #222222;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 120%;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+h1, a, em {
+    color: #8ef67b ;
+    font-weight: bolder;
+}
+
+section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+button {
+    font-family: "Ubuntu Mono", monospace;
+    background-color: #4c4c4c ;
+    color: #8ef67b ;
+    box-shadow: none;
+    font-size: 110%;
+    border: transparent;
+    margin-top: 5%;
+    padding-left: 10px; padding-right: 10px;
+    cursor: pointer;
+}
+
+input, textarea {
+    font-size: 110%;
+    width: 110%;
+    font-family: "Ubuntu Mono", monospace;
+    letter-spacing: 0.1em;
+    resize: none;
+    background-color: #4c4c4c ;
+    border-color: #8ef67b ;
+    color: #8ef67b ;
+}
+
+select, option {
+    font-size: 110%;
+    width: 110%;
+    letter-spacing: 0.1em;
+    font-family: "Ubuntu Mono", monospace;
+    background-color: #4c4c4c ;
+    border-color: #8ef67b ;
+    color: #8ef67b ;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.custom-button {
+    letter-spacing: normal;
+    font-size: 110%;
+    font-family: "Ubuntu Mono", monospace;
+    background-color: #4c4c4c ;
+    box-shadow: none;
+    border: transparent;
+    padding: 1%;
+    padding-left: 10px; padding-right: 10px;
+    color: #8ef67b ;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/*DESKTOP ONLY*/
+@media (min-width: 1001px) {
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    main {
+        flex: 1;
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    aside {
+        flex: inherit;
+        background-color: #373737;
+        border-left-style: solid;
+        border-left-color: #8ef67b ;
+        padding: 5%;
+    }
+
+    form {
+        padding: 10%;
+        display: grid;
+        grid-template-rows: repeat(2, 30%);
+        grid-template-columns: repeat(2, 30%);
+        grid-auto-flow: row dense;
+        row-gap: 10%;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+
+/*MOBILE ONLY*/
+@media (max-width: 1000px) {
+    main {
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    aside {
+        background-color: #373737;
+        border-left-style: solid;
+        border-left-color: #8ef67b ;
+        padding: 5%;
+    }
+
+    form {
+        padding: 5%;
+        padding-right: 10%;
+    }
+
+    form [input], form [button], form [select], form [label] {
+        padding: 5%;
+    }
+}
+
+/*DESKTOP ONLY DEV ROADMAP*/
+
+@media (min-width: 1001px) {
+    .roadmap-container {
+        width: 100%;  
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 100%);
+        grid-template-columns: repeat(3, auto);
+        text-align: center;
+        align-content: start;
+    }
+
+    .roadmap-line {
+        width: 50%;
+        border-right-style: dotted;
+        border-color: #8ef67b;
+        text-align: center;
+        max-width: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .roadmap-card {
+        width: 100%;
+        text-align: start;
+    }
+    
+    .roadmap-space {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
