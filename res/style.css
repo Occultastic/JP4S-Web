@@ -3,7 +3,7 @@ html {
     background-color: #222222;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 120%;
+    font-size: 1.2em;
     line-height: 150%;
     letter-spacing: 0.1em;
 }
@@ -73,8 +73,18 @@ input[type=file] {
     white-space: nowrap;
 }
 
+.download-button {
+    color: #222222;
+    text-decoration: none;
+    background-color: #8ef67b;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #8ef67b;
+    padding: 10px;
+}
+
 /*DESKTOP ONLY*/
-@media (min-width: 1001px) {
+@media (orientation: landscape) {
     body {
         display: flex;
         flex-direction: row-reverse;
@@ -107,37 +117,7 @@ input[type=file] {
         justify-items: center;
         align-items: center;
     }
-}
 
-
-/*MOBILE ONLY*/
-@media (max-width: 1000px) {
-    main {
-        margin-top: 1%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
-    aside {
-        background-color: #373737;
-        border-left-style: solid;
-        border-left-color: #8ef67b ;
-        padding: 5%;
-    }
-
-    form {
-        padding: 5%;
-        padding-right: 10%;
-    }
-
-    form [input], form [button], form [select], form [label] {
-        padding: 5%;
-    }
-}
-
-/*DESKTOP ONLY DEV ROADMAP*/
-
-@media (min-width: 1001px) {
     .roadmap-container {
         width: 100%;  
         display: grid;
@@ -166,6 +146,34 @@ input[type=file] {
         width: 100%;
         text-align: center;
     }
-    
 }
 
+
+/*MOBILE ONLY*/
+@media (orientation: portrait) {
+    main {
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    aside {
+        background-color: #373737;
+        border-left-style: solid;
+        border-left-color: #8ef67b;
+        padding: 5%;
+    }
+
+    form {
+        padding: 5%;
+        padding-right: 10%;
+    }
+
+    form [input], form [button], form [select], form [label] {
+        padding: 5%;
+    }
+
+    .roadmap-card {
+        padding-bottom: 5%;
+    }
+}
