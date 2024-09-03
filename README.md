@@ -9,6 +9,6 @@
 - Link to the Discord server (JP4S Community Server)
 
 ### Game
-> the game will be available for download via this website
+> The game will be available for download via this website.
 
-Last updated: 27-08-2024
+Last updated: 28-08-2024
