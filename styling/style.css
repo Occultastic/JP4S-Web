@@ -106,10 +106,6 @@ b {
     font-weight: 800;
 }
 
-i {
-    font-style: oblique 45deg;
-}
-
 div#new-visitor {
     display: none;
     z-index: 1;
