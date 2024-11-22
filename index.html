@@ -1,89 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!doctype html>
+<html lang="en" spellcheck="false" contenteditable="false">
+<head>
     <meta name="charset" charset="UTF-8">
     <meta name="language" lang="US-EN">
-    <title>JP4S - Homepage</title>
-    <link rel="stylesheet" href="./res/css/style.css">
-    <link rel="icon" href="icon.ico" type="image/x-icon">
-    <script src="./res/js/insertHTML.js"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    </style>
-  </head>
-  <body>
-    <aside include-html="./res/html/aside.html"></aside>
-    <main id="main">
-        <h1>Project JP4S</h1>
+    <meta name="author" content="Occultist">
+    <meta name="description" content="The official Project JP4S website by Occultist.
+        Anything from development updates to common QnAs as well as social media accounts can be found here.
+        Join our Discord!">
+    <meta name="keywords" content="JP4S, Saori, Sato, Schoolgirl, Supervisor, Occultist, occultastic, fan game, anime, horror, story, indie game, dev, gaming, 3D">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="shortcut icon" href="resources/happy-saori-sato.png" type="image/png">
+    <title>Project JP4S | Homepage</title>
+</head>
+<body>
+    <header insert-html="./components/header.html"></header>
+    <div id="new-visitor" insert-html="./components/new-visitor-dialogue.html"></div>
+    <main>
+        <h2 id="introduction">Introduction</h2>
+        <h3 id="the-project">The Project</h3>
+        <p>Project JP4S is <i>not</i> the name of the game. It's simply a code name to shorten
+            this long title: <q>JP Schoolgirl Supervisor - Saori Sato</q> <br>
+            But what does this long title mean? It is the name of a game which this project derives from.
+            The original game was developed by Noway/KurenaiGames and is available on both Android
+            and iOS. This project contains a fan game of that original game. Think of the name JP4S like Touhou, where
+            Touhou is not the name of a game but a project containing multiple types of media. <br>
+            The project will differ greatly in terms of visuals and especially the story. Please experience this
+            through a new lens and no not expect characters to go through the same things. Everything outside of JP4S
+            is not canonical, nor is JP4S a copy of the original games. I still recommend you check the original games out.
+        </p>
+        <div class="important">I am not Noway/KurenaiGames and not affiliated with said developer. Please do not contact
+            me regarding the original games.</div>
+        <h3 id="this-website">This Website</h3>
+            <p>This website serves as a communication tool between you and me. I collect common questions here and various links
+                that may be of interest to you, like social media accounts or the Discord server. Let me introduce you to all
+                the pages that are present in this website:
+                <ul>
+                    <li><a href="index.html">Homepage</a> - The page you are in right now.</li>
+                    <li><a href="dev-road.html">Development Roadmap</a> - A roadmap to various stages of the development of this project.</li>
+                    <li><a href="kanban-board.html">Kanban Board</a> - A kanban board that will be updated whenever
+                        a feature is either to be done, in progress, to be tested or completed.</li>
+                    <li><a href="questions-answers.html">Questions & Answers</a> - A page where common questions will be answered by me.</li>
+                    <li><a href="about-me.html">About Me</a> - A bit about me, Occultist.</li>
+                </ul>
+                Now go forth and explore!
 
-        <section>
-          <a class="download-button" onclick="
-            alert('It hasn\'t been released yet. Please check back in later')
-            ">Download</a>
-        </section>
-
-        <section>
-          <em>Project Overview</em> <br> <br>
-          The project is a fan-made one of the original game made by N called
-          "Schoolgirl Supervisor - Saori Sato". Later additions of the series
-          exist with "Schoolgirl Supervisor - Wildlife" and
-          "JP Schoolgirl Supervisor Multi(player)". As such, the project
-          has been named "JP4S", which stands for
-          "Japanese Schoolgirl Supervisor - Saori Sato".
-        </section>
-
-        <section>
-          <em>Project Technologies</em> <br> <br>
-          The game is being developed in the Unity 3D Engine with C#. It currently
-          employs the xNode plugin for the dialogue system. As for the 3D models,
-          a combination of VRoid Studio and Blender is used. Currently, no sound
-          system has been implemented. The game will not feature online-functionality,
-          meaning that it can be played even with no connection.
-        </section>
-
-        <section>
-          <em>Target Experience</em> <br> <br>
-          The target audience is people 16 years or older. The game
-          is NOT meant for children as it covers potentially heavy topics.
-          There will be no nudity but there may be some gore content/content about
-          death. <br>
-          The user experience needs to be carefully considered when
-          designing this game. As such, during its development, you should
-          be able to see the following:
-          <ul>
-            <li>Compatibility</li>
-            The products should be available for many PCs. This means
-            that the performance should be carefully monitored and the game
-            should be compiled for both Windows and GNU/Linux-based
-            operating systems.
-            <li>Accessibility</li>
-            The products should be usable by many people, regardless of their
-            capabilities. Things like visual impairment or auditory issues
-            are going to be respected and considered.
-            <li>Security</li>
-            The products should not interfere with the safety of anyones
-            devices and applications need to be tested properly.
-            <li>Cohesion</li>
-            The products will have a defining theme to aid in recognision.
-            <li>Creativity</li>
-            The game is free to be moddified under the condition that
-            it is as freely available as the original game and does not
-            cause any harm to anyones devices. (See the license on the
-            official GitHub repository.)
-          </ul>
-          (Please note, that products include both the game and the website
-          in most cases.)
-        </section>
-
-        <section>
-          <em>Target Audience</em> <br> <br>
-          Due to the contents of the game, I ask you to only play it if you are 16 or older.
-          This rule will be enforced once the game is available. This also goes for any social media
-          platform like Discord, YouTube, etc. Which means that the Discord server will eventually also
-          be 16+ only and so on. Please respect my wishes as this is important for the safety of the community.
-          Thank you.
-        </section>
+                <div class="hint">If you want to copy the link to a specific section in any page, simply
+                    click on the header of the section.
+                </div>
+            </p>
+        <h3 id="the-community">The Community</h3>
+        <p>You, my fellow gamers, are an important piece of this puzzle. If you want to engage in discussions about the project,
+            have questions about it or want to report bugs and add suggestions once it comes out, here are ways you can do just that:
+            <ul>
+                <li><b>Discussions</b> - Join our Discord server.</li>
+                <li><b>Questions</b> - Contact me via email at this address: <code>occultastic@proton.me</code>
+                    or ask me in the Discord server with the QnA bot.</li>
+                <li><b>Bug Reports</b> - Send me a mail at this address: <code>occultastic@proton.me</code>
+                    or create a bug ticket in the Discord server.</li>
+                <li><b>Suggestions</b> - Send me a mail at this address: <code>occultastic@proton.me</code>
+                    or write a message in the Discord server. Don't be afraid to ping me.</li>
+            </ul>
+        </p>
+        <h2 id="download">Download</h2>
+        <p>Click one of these buttons depending on what operating system you use to download the newest version.</p>
+        <div class="mobile-hint">The page detects that the window is rendered upright, which <i>could</i> mean
+            that you are viewing this on your phone. Please don't download this on your phone, if you are using one right now.
+            It's a desktop/laptop game, not a mobile game.</div>
+        <br>
+        <button onclick="alert('There is no download available yet.')">Download for Windows</button> <br>
+        <button onclick="alert('There is no download available yet.')">Download for Linux</button>
     </main>
-  </body>
+<footer insert-html="./components/footer.html"></footer>
+</body>
 </html>

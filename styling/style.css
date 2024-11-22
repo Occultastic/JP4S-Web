@@ -1,0 +1,431 @@
+:root {
+    --dark-main: #101010;
+    --dark-accent: #404040FF;
+    --dark-text: #FFFFFFFF;
+    --accent-normal: #00BB00FF;
+    --accent-dark: #009900FF;
+    --half-black: #000000CC;
+}
+
+html {
+    background: var(--dark-main);
+}
+
+body {
+    font-family: sans-serif;
+    font-kerning: normal;
+    font-optical-sizing: auto;
+    font-size: 1em;
+    font-stretch: condensed;
+    font-style: normal;
+    font-variant-ligatures: no-common-ligatures;
+    font-variant-numeric: tabular-nums slashed-zero;
+    font-variant-position: normal;
+    font-weight: 400;
+    text-align: start;
+    text-combine-upright: all;
+    text-decoration: none;
+    text-emphasis: none;
+    text-orientation: sideways;
+    text-overflow: ellipsis;
+    text-rendering: geometricPrecision;
+    text-shadow: none;
+    text-transform: none;
+    text-wrap: stable;
+    color: var(--dark-text);
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    padding-top: 10em;
+    background: linear-gradient(#00000000 20%, var(--dark-main) 80%);
+}
+
+img#header-image {
+    position: fixed;
+    top: -10em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    filter: blur(5px);
+    translate: 0;
+    z-index: -1;
+}
+
+main {
+    padding: 0 10em;
+    background-color: var(--dark-main);
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    color: var(--dark-accent);
+    font-weight: 800;
+    padding: 2em;
+    background: var(--dark-main);
+    max-width: 100%;
+    position: page;
+    bottom: 0;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 2em;
+    color: var(--accent-normal);
+    margin: 0;
+    padding-left: 2em;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 2em;
+    color: var(--accent-dark);
+    width: max-content;
+    max-width: 100%
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 2em;
+    width: max-content;
+    max-width: 100%
+}
+
+h2:hover, h3:hover, h2:focus, h3:focus {
+    background: radial-gradient(closest-side, var(--dark-accent), var(--dark-main));
+}
+
+b {
+    font-weight: 800;
+}
+
+i {
+    font-style: oblique 45deg;
+}
+
+div#new-visitor {
+    display: none;
+    z-index: 1;
+    align-content: center;
+    justify-items: center;
+    position: fixed;
+    background-color: var(--half-black);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+div#new-visitor-dialogue {
+    background-color: var(--dark-main);
+    text-align: center;
+    align-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--dark-accent);
+    color: var(--dark-text);
+    width: 30em;
+    height: 30em;
+    max-width: 80%;
+    max-height: 50%;
+    display: block;
+    padding: 1em;
+}
+
+a, a:visited {
+    text-decoration-line: underline;
+    text-decoration-color: var(--accent-dark);
+    text-decoration-style: solid;
+    font-style: normal;
+    color: var(--accent-dark);
+    cursor: default;
+    font-weight: 800;
+}
+
+a:hover, a:focus {
+    text-decoration-color: var(--accent-normal);
+    color: var(--accent-normal);
+}
+
+a[href^="http://"]:after, a[href^="https://"]:after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    translate: -0.1em -0.2em;
+    background-image: url("../resources/icons/arrow-outward-darker.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+a[href^="http://"]:hover:after, a[href^="https://"]:hover:after,
+a[href^="http://"]:focus:after, a[href^="https://"]:focus:after {
+    background-image: url("../resources/icons/arrow-outward-normal.svg");
+}
+
+h1 a, h1 a:visited, h1 a:hover, h1 a:focus {
+    text-decoration: none;
+    color: var(--accent-normal);
+}
+
+button, input {
+    font-stretch: expanded;
+    font-weight: bold;
+    border-color: var(--accent-normal);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    background: var(--accent-dark);
+    margin: 0.5em;
+    color: var(--dark-text);
+    transition: Animation 2s ease-in-out;
+    -moz-transition: Animation 2s ease-in-out;
+    -webkit-transition: Animation 2s ease-in-out;
+    -o-transition: Animation 2s ease-in-out;
+}
+
+button:hover, button:focus, input:hover, input:focus {
+    background: var(--accent-normal);
+}
+
+input[type="checkbox"] {
+    padding: 0.5em;
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+}
+
+input[type="checkbox"]::before {
+    content: "✔";
+    width: 1em;
+    height: 1em;
+    translate: 0.25em 0;
+    transform: scale(0);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="color"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    background-color: var(--accent-normal);
+    min-width: max-content;
+}
+
+input[type="color"]::after {
+    content: "Select a color";
+    text-wrap: nowrap;
+    padding: 0 1em;
+    align-self: center;
+}
+
+input[type="file"]:hover, input[type="file"]:focus {
+    cursor: default;
+}
+
+#navbar {
+    border-color: var(--dark-accent);
+    border-bottom-style: solid;
+    border-top-style: solid;
+    padding: 0.5em 0.5em 0.5em 9em;
+}
+
+#navbar a {
+    padding: 0 0.5em;
+}
+
+div.important, div.mobile-hint, div.hint {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5em;
+    margin: 1em 0;
+    padding: 0.5em;
+    text-wrap: auto;
+    width: fit-content;
+}
+
+div.important {
+    border-color: red;
+}
+
+div.important::before {
+    content: "[IMPORTANT] ";
+    color: red;
+}
+
+div.mobile-hint, div.hint {
+    border-color: cornflowerblue;
+}
+
+div.mobile-hint::before, div.hint::before {
+    content: "[HINT] ";
+    color: cornflowerblue;
+}
+
+div.center {
+    align-content: center;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#mobile-drawer-button-open, #mobile-drawer-button-close, #drawer, .mobile-hint {
+    display: none;
+}
+
+div.gallery-header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid var(--dark-accent);
+}
+
+div.gallery-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+div.gallery-controls {
+    text-align: center;
+}
+
+div.gallery-main img {
+    max-height: calc(20vh - 2em);
+    max-width: calc(100% - 2em);
+    margin: 1em;
+}
+
+div#gallery-inspector {
+    display: none;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+    background-color: var(--half-black);
+    align-items: flex-start;
+    justify-items: center;
+    padding: 10em 1em 1em 1em;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+img#gallery-inspected-image {
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 80vh;
+    max-height: 80vh;
+    justify-self: center;
+}
+
+div.gallery-inspector-controls {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (orientation: portrait) or (pointer: none) {
+    body {
+        text-wrap: stable;
+        background-size: contain;
+    }
+
+    main {
+        padding: 0 2.5em;
+    }
+
+    footer {
+        background: var(--dark-main);
+    }
+
+    img#header-image {
+        translate: 0 -5em;
+        top: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        display: inline;
+        width: 100%;
+        padding-left: 1em;
+        background: none;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    input, button {
+        margin: 1.5em;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #drawer {
+        grid-area: 2 / 2 / 3 / 3;
+        padding-top: 0.5em;
+        min-height: 100%;
+        z-index: 1;
+        position: fixed;
+        background-color: var(--half-black);
+        right: 0;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        line-height: 2em;
+        font-size: 2em;
+        backdrop-filter: blur(10px);
+    }
+
+    #drawer a {
+        display: inline;
+    }
+
+    #drawer a::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #mobile-drawer-button-open, #mobile-drawer-button-close {
+        display: unset;
+        float: right;
+        font-size: large;
+    }
+
+    #mobile-drawer-button-close {
+        margin-right: 3.5em;
+    }
+
+    .mobile-hint {
+        display: inline-block;
+    }
+}

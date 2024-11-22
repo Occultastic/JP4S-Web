@@ -1,109 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!doctype html>
+<html lang="en" spellcheck="false" contenteditable="false">
+<head>
     <meta name="charset" charset="UTF-8">
     <meta name="language" lang="US-EN">
-    <title>JP4S - Quesstions and Answers</title>
-    <link rel="stylesheet" href="./res/css/style.css">
-    <link rel="icon" href="icon.ico" type="image/x-icon">
-    <script src="./res/js/insertHTML.js"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    </style>
-  </head>
-  <body>
-    <aside include-html="./res/html/aside.html"></aside>
-    <main id="main">
-        <h1>JP4S - Questions and Answers</h1>
-
-        <section>
-          This page will answer some potential questions you may have and will be updated incase anyone
-          has some other question.
-        </section>
-
-        <section>
-          <em>Where and when will the game be published?</em> <br> <br>
-          The finished product will be linked on the website when it is available.
-          The game is for computers running Windows 10/11 and some
-          GNU/Linux distros. As for the release date, the project has started at around the start
-          of the year 2024. Games are huge and this is an ambious project.
-          It will probably take a long time.
-        </section>
-
-        <section>
-          <em>Will there be a mobile port of this game?</em> <br> <br>
-          Unfortunately, I do not care enough to make a mobile game. This wouldn't work due to the
-          following reasons: <br>
-          <ol>
-            <li>I am not a competitor of the original games developer. The mobile market has a
-              similar experience already available.</li>
-            <li>The game will be too graphically intense for a mobile port, unless I make it
-              look really bad for mobile games to run properly.</li>
-          </ol>
-        </section>
-
-        <section>
-          <em>How can I contribute to the project?</em> <br> <br>
-          There aren't many ways to do this, as I do not see the point of having volunteers yet (or ever). I cannot make any money
-          from this either, so for now, just a bit of support or spreading the word is all
-          I could hope for. In that case: thanks.
-        </section>
-
-        <section>
-          <em>Why are you working on this?</em> <br> <br>
-          Good question: I like video games and games such as The Legend of Zelda: Ocarina of Time
-          and it's sequel The Legend of Zelda: Majora's Mask have shaped me a lot.
-                It is what inspired me to start looking into technology, then the internet and then
-                software development and computer science. As for this project specifically:
-                I grew up with this game and was saddened by the story not being continued.
-                Also I dislike the direction the artstyle went. Many games get too cartoony and bright
-                these days and thus loose the flair they tried so hard to build up.
-                The whole kawaii and gothic style that was resently implemented
-                (mainly in the third version of game, JP Multi) was quite different compared to
-                the realistic and modern setting with the contrasting
-                anime-styled characters that still looked reasonably normal.
-                Especially the implementation of accessoires on the schoolgirl
-                (as if rainbow hair and irises wasn't enough lol) bothered me.
-                Of course, you can change this tediously in the game,
-                but I think it should have stayed as the default.
-        </section>
-
-        <section>
-          <em>How will the games story differ?</em> <br> <br>
-          This is one of the hardest part of development. I seriously have no clue
-          what the original creator tried to do with this story.
-          Please keep in mind: the rest will be a spoiler. So firstly,
-          we have no idea who was behind the murder of Akane.
-          Secondly, many of the characters have no content or dialogue added to them.
-          Thirdly, the game is supposed to have at least 5 days with day and night each
-          (so roughly 10 chapters) and it is still only done with 2 of them since,
-          well... forever. Sure, Tuesday set in daytime is still there,
-          but it is not even closely finished. <br>
-          It is pretty clear that the game is abandonware (the games creator has made some uploads
-          on his youtube channel about remaking the game entirely.)
-          I guess I will come up with it during development and write the characters first
-          before the story. <br>
-          As of now, I decided to go with a more experimental story about Saori's origin
-          and I hope it will explain why
-          a new student at a school immediantly gets elected as schoolgirl supervisor.
-          (despite it making no sense since
-          a supervisor should have experience being at that place and knowing the ins and outs
-          of it in-order to solve problems effectively.) <br>
-          I would also like to flesh out the relationships
-          (Please note: DOES NOT NECESSARILY MEAN ROMANTIC, although
-          this will also be added) between NPCs, as I want the world to feel a bit more lively.
-          Not everything in the world revolves around the supposed
-          "main character" (protagonist) and this product should reflect that. <br>
-          Another braking change is going to be the schools administration and Akane getting
-          into some hot water and paying for their actions and crimes commited.
-          Imagine being at a school where they
-          have a creepy basement with high-security cells and interrogation rooms,
-          gym yards with an axe execution site and even other beheading or neck-breaking
-          contraptions OUT IN THE OPEN. Yeah, these staff members and teachers are not
-          exactly operating in a carring manner.
-        </section>
-            
-    </main>
-  </body>
+    <meta name="author" content="Occultist">
+    <meta name="description" content="The official Project JP4S website by Occultist.
+        Anything from development updates to common QnAs as well as social media accounts can be found here.
+        Join our Discord!">
+    <meta name="keywords" content="JP4S, Saori, Sato, Schoolgirl, Supervisor, Occultist, occultastic, fan game, anime, horror, story, indie game, dev, gaming, 3D">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="shortcut icon" href="resources/happy-saori-sato.png" type="image/png">
+    <title>Project JP4S | Questions & Answers</title>
+</head>
+<body>
+<header insert-html="./components/header.html"></header>
+<div id="new-visitor" insert-html="./components/new-visitor-dialogue.html"></div>
+<main>
+    <h2 id="how-to-submit-questions">How To Submit Questions</h2>
+    <p>This page serves as a written and confirmed collection of common questions and my answers to them. Please read
+        through this page before asking questions and in case things are unclear, or you cannot find your answer here,
+        consider writing me an email at this address <code>occultastic@proton.me</code>, talk to me via Discord in
+        the JP4S Community Server (link is in the navigation bar or drawer). We have a channel dedicated to questions
+        and answers.
+    </p>
+    <h2 id="common-questions">Common Questions</h2>
+    <h3 id="when-will-this-game-be-released">When will this game be released?</h3>
+    <p>A classic questions for pretty much every project and with that a common answer:
+        <q>I simply don't know, but I will do my best to work on this.</q>
+    If you have read the <a href="about-me.html">About Me</a> page you will know that this is a hobby project that is being worked on in between
+    a full-time job as a software developer. I usually work on this project in the weekends.
+    </p>
+    <h3 id="where-can-i-see-your-progress">Where can I see your progress?</h3>
+    <p>I have both a <a href="kanban-board.html">Kanban Board</a> page which I will update for each time the status of a task changes. On top
+        of that I typically release small videos or screenshots of my progress on the JP4S Community Server as well as maintain
+        a to-do list in that server. However, a lot of things are left out from the public eye intentionally
+        to avoid spoilers, so even if it looks like I am not doing anything, here are the potential reasons:
+    </p>
+    <ul>
+        <li>I need to work or attend school. (yes, I have school and a job at the same time)</li>
+        <li>I am working on the story and writing/designing characters. (don't want to spoil anything)</li>
+        <li>I am sick and cannot focus on working more than what I already have to. (happens quite often during winter unfortunately)</li>
+        <li>I am currently working on something that takes a long time and don't want to show it until it is ready.
+            (I don't want to make a huge deal about something until I am done with it)</li>
+    </ul>
+    <p>But no worries, there are plenty of ways to track my progress and what I am working on.</p>
+    <h3 id="will-this-be-released-on-mobile">Will this be released on mobile?</h3>
+    <p>No. I know that a lot of people don't have PCs and that the original game is on mobile, but I don't want to develop
+        and release it on mobile for the following reasons:
+    </p>
+    <ul>
+        <li>I am not a competitor to the original developer/publisher.</li>
+        <li>The games story, controls and graphical requirements can only work with PC or laptops and a mobile
+            port is a severe downgrade.</li>
+        <li>The mobile market is too restrictive to get in, with many phone manufacturers requiring the publisher to reveal
+            personal information or work within their restrictions. I also doubt that the mobile market is healthy for consumers,
+            for that please check out my <a href="about-me.html">About Me</a> page where you can see why that is my opinion.</li>
+    </ul>
+    <p>If you see anyone use my material on the Google Play Store or the App Store and advertise the game as a mobile
+        port or anything related directly to JP4S, please report it to me so that I can take it down as this is a common
+        scam tactic that is harmful to unknowing players. These games are typically nothing like what they advertise and may
+        contain malware and a ton of ads.
+    </p>
+    <h3 id="why-is-the-age-rating-restricted-to-16">Why is the age rating restricted to [+16]?</h3>
+    <p>The original games has serious topics such as gore, assault, bullying and more things. While not all of them will
+        be present (mainly all the perverted things will be left out) a good chunk of it will, in a hopefully respectful and tasteful way.
+        As such, I do not believe that children should play this game or engage in any content regarding it. I also encourage
+        anyone who may produce content about it to warn the audience that the game is only for those who are 16 years old or above
+        for their safety.</p>
+    <h3 id="will-this-be-a-paid-game">Will this be a paid game?</h3>
+    <p>No it won't be, as this is a fan game and not an original IP. Unless money is extremely
+        tight, I can support myself with my job and will just continue this project as a passion project to reimagine the world
+        of our beloved schoolgirl supervisor. So for now there is no way to donate.
+    </p>
+    <h3 id="how-different-will-the-game-be-compared-to-the-original">How different will the game be compared to the original?</h3>
+    <p>The game will differ a lot. In general, I would advise you to treat the game as completely separate from the original
+        as I will not include any lore from the original directly. Simply pretend that all the canon things from the original
+        is not canon in this fan game when going in, unless explicitly or implicitly shown within the game or any other content produced by me tagged as "JP4S".
+        Only the concept of a schoolgirl supervisor in a strict school in Japan is present, with some of the metadata
+        about the game itself (it being 3D, single player, etc.) is the same.
+        None of the assets from the original game is used and the game does not aim to be a copy of the original nor a continuation
+        of the original game.</p>
+    <h3 id="where-can-i-report-bugs">Where can I report bugs?</h3>
+    <p>Simply write me a mail at this address: <code>occultastic@proton.me</code> or go to the Discord server and create a bug ticket.
+        I am glad for each report I receive. Also, when writing a bug report, please answer the following questions, as this could
+        massively help me find it and fix it:
+    </p>
+    <ol>
+        <li>What version is the game that you are running?</li>
+        <li>Did you receive the game directly from an official source (my website or whatever links I post) or
+            did you download it from someone else (in this case I won't fix the bug as it could be that someone
+            modified it, which means that you have to be careful)</li>
+        <li>What operating system do you use? (Is it Windows or Linux?)</li>
+        <li>When does the bug occur?</li>
+        <li>What did you do before the bug?</li>
+        <li>Have you modified the game in any way? (If so, I cannot help you as it could be that you caused the bug.)</li>
+        <li>What should happen instead and what did happen?</li>
+    </ol>
+    <p>Here are just some of these questions, but if you cannot answer it, then that's okay. I will help guide you. Also a quick tip:
+        I would appreciate it if you titled a mail with the subject containing "bug" in it, so that I know what the issue is.
+    </p>
+    <h3 id="is-there-any-way-i-can-volunteer">Is there any way I can volunteer?</h3>
+    <p>Other than expressing your interest in this project, there is no way I can take in volunteer work. I simply refuse
+        to make people work for free and I do not have the money to hire anyone. Also, I kind of like working solo and with a team
+        comes more responsibility that I would have, which is not possible with my current time schedule. I still am
+        thankful for the offer.</p>
+    <h3 id="what-will-happen-after-jp4s">What will happen after JP4S?</h3>
+    <p>I think after this project I want to make a completely original IP, which I definitely
+        want to monetize in a consumer friendly manner, meaning no scammy pay-to-win games or ads, just a price tag for a game that
+        you buy and then own. I do want to invest in a career as a full-time indie game developer. I was considering the following game ideas:
+    </p>
+    <ul>
+        <li>A futuristic first person 3D game where you play as a technologically enhanced person
+            (a bit like <a href="https://en.wikipedia.org/wiki/Half-Life_(series)">Half-Life</a>,
+            <a href="https://en.wikipedia.org/wiki/Deus_Ex_(video_game)">Deus Ex</a> and
+            <a href="https://en.wikipedia.org/wiki/System_Shock_(series)">System Shock</a>)</li>
+        <li>A magical third person 2D game where you play as one or many girls with mythological origins
+            (kind of like the <a href="https://en.wikipedia.org/wiki/Touhou_Project">Touhou Project</a>
+            but not necessarily a danmaku game, could be a turn-based RPG, danmaku game or something else)</li>
+        <li>A medieval fantasy third person 3D game where you play as a young adventurer
+            (kind of like <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda">The Legend of Zelda</a>,
+            could also be tied into the same world as the 2nd idea)</li>
+        <li>Or perhaps smaller projects?</li>
+    </ul>
+    <p>If any of these seem interesting to you, then it will be definitely worth it sticking around even past the development and
+    release of JP4S. Please note that none of these ideas will be within Project JP4S but completely separate.
+    </p>
+</main>
+<footer insert-html="./components/footer.html"></footer>
+</body>
 </html>
